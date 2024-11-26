@@ -36,7 +36,7 @@ h1{
 
 
 
-/* MENU */
+/* MENU NAVIGATION */
 #burger {
     position : fixed;
     top: 20px;
@@ -46,9 +46,7 @@ h1{
     font-size: 1.1rem;
 }
 
-/* définition du format du menu. Par défaut le menu est invisible */
 #menu{
-    /* display : none; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -61,7 +59,7 @@ h1{
     background-color: #07235f;
     color: #fff;
     transition: transform .5s;
-    transform: translateX(300px); /* bouge menu 200px a droite (hors fenetre) */
+    transform: translateX(300px);
     width: 200px;
     height: 400px;
 }
@@ -82,13 +80,8 @@ h1{
     padding: 10px;
 }
 
-/* Sélectionne l'élément #burger qui est précédé par la case à côcher (#chk-burger côcher) */
-/* opérateur + un des suivant
-   opérateur ~ le suivant
-*/
 #chk-burger:checked + #menu {
-    /* display:block; menu devient visible */
-    transform: translateX(0); /* menu reprend position naturelle */
+    transform: translateX(0);
 }
 
 
