@@ -157,6 +157,16 @@ img{
 
 /* SECTIONS */
 
+/* section tableau */
+table{
+    border-collapse: collapse;
+}
+
+table th, td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
 body section:nth-of-type(1){
     background-color: hsl(10, 69%, 50%);
 }
