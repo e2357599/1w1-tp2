@@ -38,6 +38,22 @@ h2{
     font-size: 3rem;
 }
 
+body section:nth-of-type(1){
+    background-color: hsl(10, 69%, 50%);
+}
+body section:nth-of-type(2){
+    background-color: hsl(20, 69%, 50%);
+}
+body section:nth-of-type(3){
+    background-color: hsl(30, 69%, 50%);
+}
+body section:nth-of-type(4){
+    background-color: hsl(40, 69%, 50%);
+}
+body section:nth-of-type(5){
+    background-color: hsl(50, 69%, 50%);
+}
+
 
 
 /* MENU NAVIGATION */
@@ -158,6 +174,13 @@ nav a{
 /* SECTIONS */
 
 /* section tableau */
+
+#tableau .global{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 table{
     border-collapse: collapse;
 }
@@ -165,6 +188,10 @@ table{
 table th, td{
     border: 1px solid black;
     padding: 5px;
+}
+
+.busy{
+    background-color: rgba(0, 0, 0, .3);
 }
 
 /* section articles */
@@ -201,26 +228,16 @@ table th, td{
     filter: grayscale(0);
 }
 
+/* section galerie */
+.pics-container{
+    margin: 20px 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
 /* section video */
 iframe{
     margin: 20px 90px;
-}
-
-
-body section:nth-of-type(1){
-    background-color: hsl(10, 69%, 50%);
-}
-body section:nth-of-type(2){
-    background-color: hsl(20, 69%, 50%);
-}
-body section:nth-of-type(3){
-    background-color: hsl(30, 69%, 50%);
-}
-body section:nth-of-type(4){
-    background-color: hsl(40, 69%, 50%);
-}
-body section:nth-of-type(5){
-    background-color: hsl(50, 69%, 50%);
 }
 
 
