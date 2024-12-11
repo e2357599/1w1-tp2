@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" href="assets/images/favicon.ico">
+
+        <script src="assets/js/script.js" defer></script>
     </head>
     <body>
         <label for="chk-burger" id="burger">
@@ -57,7 +59,7 @@
                 <form class="formulaire">
                     <fieldset>
                         <legend>Personnel</legend>
-                        <p>Inscrivez-vous si vous voulez rester a l'affut de nouvelles informations et nouveaux blogs</p>
+                        <p>Inscrivez-vous si vous voulez rester a l'affut de nouvelles informations et nouveaux blogs</p><br>
 
                         <div>
                             <label for="nom">Nom</label>
@@ -70,12 +72,14 @@
                         <div>
                             <label for="courriel">Courriel</label>
                             <input type="text" id="courriel" placeholder="Entrez votre courriel">
-                        </div>
+                        </div><br>
+
+                        <button onclick="alertPerso()">Envoyer</button>
                     </fieldset>
 
                     <fieldset>
                         <legend>Travail</legend>
-                        <p>Contactez-moi si vous avez des idées intérressantes de collaborations ou des propositions d'embauche</p>
+                        <p>Contactez-moi si vous avez des idées intérressantes de collaborations ou des propositions d'embauche</p><br>
 
                         <div>
                             <label for="nom">Nom</label>
@@ -88,7 +92,9 @@
                         <div>
                             <label for="coordonnees">Coordonnées</label>
                             <input type="text" id="coordonnees" placeholder="Entrez vos coordonnées">
-                        </div>
+                        </div><br>
+
+                        <button onclick="alertTravail()">Envoyer</button>
                     </fieldset>
                 </form>
             </div>
@@ -266,9 +272,14 @@
             <div class="global">
                 <h2>Galerie</h2><br>
                 <p>Mes travaux</p><br>
-                <div class="pics-container">
-
-                </div>
+                <figure class="pics-container">
+                    <img src="assets/images/code-csharp.png" alt="">
+                    <img src="assets/images/code-js.png" alt="">
+                    <img src="assets/images/code-python.png" alt="">
+                    <img src="assets/images/ex-pokemon.png" alt="">
+                    <img src="assets/images/ex-spritesheet.png" alt="">
+                    <img src="assets/images/tp1-web.png" alt="">
+                </figure>
             </div>
         </section>
 
@@ -358,8 +369,8 @@
                 <p>TIM - Techniques d'intégration multimédias - 2024</p>
 
                 <div>
-                    <p>Liens utiles</p>
-                    <figure>
+                    <p>Réseaux sociaux du collège:</p>
+                    <figure class="reseaux">
                         <a href="https://www.facebook.com/CollegeMaisonneuve" target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=facebook&color=00f" width="32" height="32"></a>
                         <a href="https://x.com/CdeMaisonneuve" target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=twitter&color=0af" width="32" height="32"></a>
                         <a href="https://www.youtube.com/user/communicmaisonneuve" target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=youtube&color=f00" width="32" height="32"></a>

@@ -36,22 +36,28 @@ h1{
 
 h2{
     font-size: 3rem;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
+    text-align: center;
+}
+
+p{
+    color: white;
 }
 
 body section:nth-of-type(1){
-    background-color: hsl(10, 69%, 50%);
+    background-image: linear-gradient(to bottom, hsl(10, 69%, 50%), hsl(20, 69%, 50%));
 }
 body section:nth-of-type(2){
-    background-color: hsl(20, 69%, 50%);
+    background-image: linear-gradient(to bottom, hsl(20, 69%, 50%), hsl(30, 69%, 50%));
 }
 body section:nth-of-type(3){
-    background-color: hsl(30, 69%, 50%);
+    background-image: linear-gradient(to bottom, hsl(30, 69%, 50%), hsl(40, 69%, 50%));
 }
 body section:nth-of-type(4){
-    background-color: hsl(40, 69%, 50%);
+    background-image: linear-gradient(to bottom, hsl(40, 69%, 50%), hsl(50, 69%, 50%));
 }
 body section:nth-of-type(5){
-    background-color: hsl(50, 69%, 50%);
+    background-image: linear-gradient(to bottom, hsl(50, 69%, 50%), hsl(60, 69%, 50%));
 }
 
 
@@ -85,11 +91,17 @@ body section:nth-of-type(5){
 }
 
 #menu a {
-    color : #fff;
+    color : white;
     display : block;
     font-size: 1.1rem;
     text-decoration: none;
     font-weight: bold;
+    background-color: rgba(173, 216, 230, 0);
+    transition: background-color .5s, color .5s;
+}
+#menu a:hover{
+    background-color: rgba(173, 216, 230, 1);
+    color: black;
 }
 
 
@@ -109,7 +121,7 @@ body section:nth-of-type(5){
 /* HEADER */
 
 .entete{
-    background-color: hsl(0, 69%, 50%);
+    background-image: linear-gradient(to bottom, hsl(0, 69%, 50%), hsl(10, 69%, 50%));
 }
 
 .entete .hero{
@@ -120,7 +132,15 @@ body section:nth-of-type(5){
     padding: 70px;
 }
 
-nav{
+.hero h2{
+    text-align: left;
+}
+
+.hero p{
+    color: #0ef;
+}
+
+/* nav{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -129,7 +149,7 @@ nav{
 nav a{
     text-decoration: none;
     color: #0ef;
-}
+} */
 
 .intro{
     display: flex;
@@ -173,8 +193,21 @@ nav a{
 
 /* SECTIONS */
 
-/* section tableau */
+/* section inscription */
+.formulaire{
+    margin: 20px 50px;
+}
 
+fieldset{
+    padding: 20px;
+    margin: 50px 0;
+}
+
+legend{
+    font-size: 2rem;
+}
+
+/* section tableau */
 #tableau .global{
     display: flex;
     flex-direction: column;
@@ -222,7 +255,6 @@ table th, td{
     filter: grayscale(.5);
     transition: transform .5s, filter .5s;
 }
-
 .lst-articles figure:hover{
     transform: scale(1.1) translate(5%);
     filter: grayscale(0);
@@ -233,6 +265,19 @@ table th, td{
     margin: 20px 50px;
     border: 3px solid black;
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 60%;
+}
+
+.pics-container img{
+    width: 200px;
+    flex: 1 1 300px;
+    transition: flex-basis 1s;
+}
+.pics-container img:hover{
+    flex-basis: 400px;
+    border: 1px solid white;
 }
 
 /* section video */
@@ -245,7 +290,25 @@ iframe{
 /* FOOTER */
 
 .pied{
-    background-color: hsl(60, 69%, 50%);
+    background-image: linear-gradient(to bottom, hsl(60, 69%, 50%), hsl(70, 69%, 50%));
+}
+
+.pied .global{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    font-size: 1.25rem;
+}
+
+.pied .global div p{
+    margin-bottom: 20px;
+}
+
+.reseaux{
+    display: flex;
+    justify-content: space-around;
 }
 
 
